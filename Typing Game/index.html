@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="settings-btn" class="settings-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+
+    <div class="settings" id="settings">
+        <form id="setting-form">
+            <div>
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Typing Game</h2>
+        <small>Type the following:</small>
+        <h1 id="word"></h1>
+        <input type="text" id="text" placeholder="Type the word here" autocomplete="off">
+
+        <p class="time-container">
+            Time left: <span id="time">10s</span>
+        </p>
+        <p class="score-container">
+            Score: <span id="score">0</span>
+        </p>
+        <div id="end-game-container" class="end-game-container">
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
